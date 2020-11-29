@@ -8,7 +8,7 @@
 1. リポジトリをクローン
 
    ```
-   git clone https://github.com/takassh23/flutter-for-web.git flutter_app/flutterdock
+   git clone https://github.com/takassh23/flutter-web.git flutter_app/flutterdock
    ```
 
 2. flutterdock階層で
