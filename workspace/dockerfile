@@ -1,0 +1,19 @@
+ARG UBUNTU_VERSION
+
+FROM ubuntu:${UBUNTU_VERSION}
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && apt-get upgrade -y
+RUN apt-get install -y curl vim git unzip clang \
+    xserver-xorg pkg-config libgtk-3-dev curl cmake ninja-build \
+    wget gnupg net-tools \
+    && apt-get clean
+
+RUN git clone https://github.com/flutter/flutter.git
+RUN mv flutter /opt/
+ENV PATH $PATH:/opt/flutter/bin
+
+RUN flutter config --enable-web
+
+WORKDIR /var/www

@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+### workspace ################################################
+  workspace:
+    build:
+      context: ./workspace
+      args:
+        - UBUNTU_VERSION=${UBUNTU_VERSION}
+    tty: true
+    volumes:
+        - ${APP_CODE_PATH_HOST}:${APP_CODE_PATH_CONTAINER}${APP_CODE_CONTAINER_FLAG}
