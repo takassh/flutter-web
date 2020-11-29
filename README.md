@@ -1,10 +1,7 @@
 # Flutter for web 環境構築
 
 - Flutterのweb版での環境構築です。androidも頑張ればできます。
-- 途中remote-containerを開かないといけないので動画を参考にしてください。
-
-- 動画
-   - [参考動画](https://gitlab.com/welcome-to-sodai/flutter-web/-/raw/master/video.mov?inline=false)
+- 途中remote-containerを開かないといけないのでそれだけ注意してください。
 
 ## FlutterDock
 
